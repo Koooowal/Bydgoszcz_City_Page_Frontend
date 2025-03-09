@@ -1,0 +1,319 @@
+<!DOCTYPE html> <!-- Deklaracja typu dokumentu HTML5 -->
+<html lang="pl"> <!-- Otwarcie znacznika HTML z ustawieniem języka na polski -->
+<head> <!-- Otwarcie sekcji nagłówka dokumentu -->
+    <meta charset="UTF-8"> <!-- Ustawienie kodowania znaków na UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bydgoszcz</title> <!-- Tytuł strony wyświetlany na karcie przeglądarki -->
+    <link rel="shortcut icon" type="image/png" href="img/herb.png"> <!-- Linki do ikon, czcionek i plików CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Linki do ikon, czcionek i plików CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Linki do ikon, czcionek i plików CSS -->
+    <link rel="stylesheet" href="css/fontawesome.css"> <!-- Linki do ikon, czcionek i plików CSS -->
+    
+
+
+</head> <!-- Zamknięcie sekcji nagłówka dokumentu -->
+<body> <!-- Otwarcie sekcji ciała dokumentu -->
+    <div class="container"> <!-- Otwarcie znacznika div z określoną klasą -->
+        <header class="main-header clearfix"> <!-- Otwarcie sekcji nagłówka strony -->
+            <div class="logo"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <a href="#"> <img src="img/herb.png" height="50" width="40" alt="herb">  Bydgoszcz</a> <!-- Link do innej sekcji lub strony -->
+            </div> <!-- Zamknięcie znacznika div -->
+            <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a> <!-- Link do innej sekcji lub strony -->
+            <nav id="menu" class="main-nav" role="navigation"> <!-- Otwarcie sekcji nawigacyjnej strony -->
+                <ul class="main-menu"> <!-- Lista elementów menu nawigacyjnego -->
+                <li><a href="#top">Home</a></li> <!-- Element listy z linkiem do sekcji na stronie -->
+                <li class="has-submenu"><a href="#section2">O Bydgoszczy</a>
+                    <ul class="sub-menu"> <!-- Lista elementów menu nawigacyjnego -->
+                    <li><a href="#places">Ciekawe miejsca</a></li> <!-- Element listy z linkiem do sekcji na stronie -->
+                    <li><a href="#facts">Ciekawostki</a></li> <!-- Element listy z linkiem do sekcji na stronie -->
+                    </ul> <!-- Zamknięcie listy elementów menu -->
+                </li>
+                <li><a href="#poster">Darmowa pocztówka</a></li> <!-- Element listy z linkiem do sekcji na stronie -->
+                <li><a href="#dojazd">Dojazd</a></li> <!-- Element listy z linkiem do sekcji na stronie -->
+                <li><a href="#contact">Kontakt</a></li> <!-- Element listy z linkiem do sekcji na stronie -->
+                </ul> <!-- Zamknięcie listy elementów menu -->
+            </nav> <!-- Zamknięcie sekcji nawigacyjnej -->
+        </header> <!-- Zamknięcie sekcji nagłówka strony -->
+
+
+        <section class="section main-banner" id="top" data-section="top"> <!-- Otwarcie sekcji z określoną klasą section main-banner-->
+            <div class="tm-video-container"> <!-- Otwarcie znacznika div z określoną klasą tm-video-container-->
+                <video id="tm-welcome-video" class="tm-welcome-video" autoplay="" loop="" muted="" > <!-- Wstawienie wideo na stronę z automatycznym odtwarzaniem, zapętleniem i wyciszeniem -->
+                <source src="videos/videoo.mp4" type="video/mp4"> Your browser does not support the video tag. <!-- Ścieżka do pliku wideo i określenie jego typu -->
+                </video> <!-- Zamknięcie znacznika wideo -->
+                <div id="tm-video-loader"> <!-- Otwarcie znacznika div z określonym id -->
+                </div> <!-- Zamknięcie znacznika div -->
+                <div id="tm-video-text-overlay" class="tm-video-text-overlay d-none"> <!-- Otwarcie znacznika div z określonym id tm-video-text-overlay-->
+                    <div id="tm-overlay-caption" class="tm-overlay-caption-text"> <!-- Otwarcie znacznika div z określonym id tm-overlay-caption-->
+                        <h6><em>Twoje </em> Miasto</h6> <!-- Nagłówek sekcji -->
+                        <h1>Bydgoszcz</h1><br> <!-- Nagłówek sekcji -->
+                        <div class="main-button"><br><br><br> <!-- Otwarcie znacznika div z określoną klasą main-button-->
+                        <div class="scroll-to-section"> <!-- Otwarcie znacznika div z określoną klasą scroll-to-section-->
+                            <a href="#places">Discover more</a> <!-- Link do innej  -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                    </div> <!-- Zamknięcie znacznika div -->
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+
+
+        <section class="section features" id="features" data-section="features"> <!-- Otwarcie sekcji z określoną klasą -->
+            <div class="container"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <div class="row"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <div class="col-lg-4 col-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                        <div class="features-post"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="features-content"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <div class="content-show"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <h4><i class="fa fa-graduation-cap"></i>Miasto Turystyczne</h4> <!-- Nagłówek sekcji -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="content-hide"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <p>Bydgoszcz, położona nad malowniczą Brdą i Kanałem Bydgoskim, przyciąga turystów swoją unikalną architekturą, licznymi muzeami oraz urokliwymi bulwarami nad wodą. Miasto oferuje również różnorodne atrakcje kulturalne, takie jak Operę Nova, Muzeum Mydła i Historii Brudu, a także liczne festiwale i wydarzenia plenerowe, które przyciągają zarówno mieszkańców, jak i odwiedzających.</p> <!-- Paragraf tekstu -->
+                                    <div class="scroll-to-section"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <a href="#places">Więcej</a> <!-- Link do innej sekcji lub strony -->
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                    </div> <!-- Zamknięcie znacznika div -->
+                    <div class="col-lg-4 col-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                        <div class="features-post second-features"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="features-content"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <div class="content-show"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <h4><i class="fa fa-graduation-cap"></i>Miasto niespodzianek</h4> <!-- Nagłówek sekcji -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="content-hide"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <p>Bydgoszcz jest miastem pełnym ciekawostek, takich jak Fontanna Potop, która jest jednym z najbardziej złożonych i unikatowych zespołów rzeźbiarskich w Polsce. Dodatkowo, miasto może poszczycić się największym w Polsce parkiem miejskim – Leśnym Parkiem Kultury i Wypoczynku Myślęcinek, oferującym liczne atrakcje przyrodnicze i rekreacyjne.</p> <!-- Paragraf tekstu -->
+                                    <div class="scroll-to-section"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <a href="#facts">Więcej</a> <!-- Link do innej sekcji lub strony -->
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                    </div> <!-- Zamknięcie znacznika div -->
+                    <div class="col-lg-4 col-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                        <div class="features-post third-features"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="features-content"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <div class="content-show"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <h4><i class="fa fa-graduation-cap"></i>Pocztówka</h4> <!-- Nagłówek sekcji -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="content-hide"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <p>Wypełnij formularz zgłoszeniowy, aby otrzymać darmową pocztówkę z krajobrazem Bydgoszczy.</p> <!-- Paragraf tekstu -->
+                                    <div class="scroll-to-section"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <a href="#poster">Szczegóły</a> <!-- Link do innej sekcji lub strony -->
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                    </div> <!-- Zamknięcie znacznika div -->
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+
+
+        <section class="section places" id="places" data-section="places"> <!-- Otwarcie sekcji z określoną klasą -->
+            <div class="container tm-container-2"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <div class="row"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <div class="col-lg-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                        <h2 class="tm-welcome-text">Witaj w Bydgoszczy!</h2>
+                    </div> <!-- Zamknięcie znacznika div -->
+                </div> <!-- Zamknięcie znacznika div -->
+                <div class="row tm-section-mb"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <div class="col-lg-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                        <div class=" tm-timeline-item"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="tm-timeline-item-inner"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <img src="img/img-01.jpg" alt="Image" class="rounded-circle tm-img-timeline">
+                                <div class="tm-timeline-connector"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <p class="mb-0">&nbsp;</p>
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="tm-timeline-description-wrap"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <div class="tm-bg-dark tm-timeline-description"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <h3 class="tm-text-green tm-font-400">Wyspa Młyńska </h3>
+                                        <p>Zabytkowa wyspa rzeczna w rejonie staromiejskim Bydgoszczy, o powierzchni ok. 6,5 ha, mieszcząca obiekty kulturalne i rekreacyjne, otoczona bulwarami i urządzeniami hydrotechnicznymi. Wyspa otrzymała w 2012 roku Certyfikat Najlepszy Produkt Turystyczny nadany przez Polską Organizację Turystyczną.</p> <!-- Paragraf tekstu -->
+                                        <p class="tm-text-green float-right mb-0">Wstęp darmowy</p>
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                            <div class="tm-timeline-connector-vertical"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                        <div class="tm-timeline-item"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="tm-timeline-item-inner"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <img src="img/img-02.jpg" alt="Image" class="rounded-circle tm-img-timeline">
+                                <div class="tm-timeline-connector"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <p class="mb-0">&nbsp;</p>
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="tm-timeline-description-wrap"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <div class="tm-bg-dark-light tm-timeline-description"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <h3 class="tm-text-cyan tm-font-400">Opera Nova</h3>
+                                        <p> Teatr operowy, pełniący również rolę teatru muzycznego, zlokalizowany w Bydgoszczy, założony w 1956 r., upaństwowiony w 1960 r. Jest jedną z 10 scen operowych w Polsce oraz jedynym tego typu teatrem na terenie województwa kujawsko-pomorskiego.</p> <!-- Paragraf tekstu -->
+                                        <p class="tm-text-cyan float-right mb-0">Ceny - ok. 120 zł / miejsce</p>
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                            <div class="tm-timeline-connector-vertical"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                        <div class="tm-timeline-item"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="tm-timeline-item-inner"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <img src="img/img-03.jpg" alt="Image" class="rounded-circle tm-img-timeline">
+                                <div class="tm-timeline-connector"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <p class="mb-0">&nbsp;</p>
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="tm-timeline-description-wrap"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <div class="tm-bg-dark tm-timeline-description"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <h3 class="tm-text-yellow tm-font-400">Fontanna Potop</h3>
+                                        <p>Fontanna, wielofigurowa kompozycja rzeźbiarska istniejąca w latach 1904-1943 i od 2014 w Bydgoszczy. Przez cały okres pierwszego istnienia i obecnie dzieło to jest jedną z atrakcji turystycznych Bydgoszczy.</p> <!-- Paragraf tekstu -->
+                                        <p class="tm-text-yellow float-right mb-0">Wstęp darmowy</p>
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                            <div class="tm-timeline-connector-vertical"></div> <!-- Otwarcie znacznika div z określoną klasą -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                        <div class="tm-timeline-item"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="tm-timeline-item-inner"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <img src="img/img-04.jpg" alt="Image" class="rounded-circle tm-img-timeline">
+                                <div class="tm-timeline-connector"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <p class="mb-0">&nbsp;</p>
+                                </div> <!-- Zamknięcie znacznika div -->
+                                <div class="tm-timeline-description-wrap"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                    <div class="tm-bg-dark-light tm-timeline-description"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                        <h3 class="tm-text-orange tm-font-400">Młyny Rothera</h3>
+                                        <p>Dawne młyny zbożowe położone na Wyspie Młyńskiej w Bydgoszczy. Obecnie obiekt ekspozycyjny z wystawami, salami konferencyjnymi, w którym odbywają się imprezy kulturalne, wystawy, spotkania itp.</p> <!-- Paragraf tekstu -->
+                                        <p class="tm-text-orange float-right mb-0">Wstęp darmowy</p>
+                                    </div> <!-- Zamknięcie znacznika div -->
+                                </div> <!-- Zamknięcie znacznika div -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                    </div> <!-- Zamknięcie znacznika div -->
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+        <hr>
+
+
+        <section class="section facts" id="facts" data-section="facts"> <!-- Otwarcie sekcji z określoną klasą -->
+            <div class="row"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <div class="col-lg-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <h2 class="tm-welcome-text">Ciekawostki:</h2>
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+            <div class="row tm-section-mb tm-section-mt"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <p>Podczas przebudowy Starego Rynku zaznaczono linię przebiegu osiemnastego południka długości geograficznej wschodniej, którą zakończono zegarem odmierzającym astronomiczny czas bydgoski.</p> <!-- Paragraf tekstu -->
+                </div> <!-- Zamknięcie znacznika div -->
+                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <p>W Muzeum Mydła i historii brudu można własnoręcznie wykonać mydło, wybrać jego kolor i zapach oraz poznać historię mydła od czasów starożytnych i wiele ciekawostek związanych z higieną osobistą w różnych epokach.</p> <!-- Paragraf tekstu -->
+                </div> <!-- Zamknięcie znacznika div -->
+                <div class="col-lg-4 col-md-4 col-sm-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <p>Bydgoszcz ma powierzchnię 175,98 km kw. Jest podzielona na 29 osiedli i sześć dzielnic, a według danych Głównego Urzędu Statystycznego, w 2019 roku w Bydgoszczy mieszkało 350 tysięcy osób i pod względem liczby ludności zajmuje 8. miejsce w Polsce.</p> <!-- Paragraf tekstu -->
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+        <hr>
+
+
+        <section class="section poster" id="poster" data-section="poster"> <!-- Otwarcie sekcji z określoną klasą -->
+            <div class="posterr"> <!-- Otwarcie znacznika div z określoną klasą -->
+            <div class="row tm-section-mp tm-section-mp"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <form action="mailto:beatap@cs.pollub.pl" method="post"  class="tm-contact-form"> <!-- Otwarcie formularza z akcją mailto do wysyłania danych na email -->
+                    <h3 class="mb-4 tm-text-gray">Wypełnij, aby otrzymać darmową widokówkę z Bydgoszczy!</h3><br>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Imię i Nazwisko" required><br> <!-- Pole input formularza -->
+                    <input type="text" id="adress" name="adress" class="form-control" placeholder="Adres" required><br> <!-- Pole input formularza -->
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email..." required><br> <!-- Pole input formularza -->
+                    <select class="form-control"  required > <!-- Pole wyboru z listą opcji w formularzu -->
+                        <option value="" disabled selected hidden>Państwo</option> <!-- Opcja w polu wyboru -->
+                        <option>Polska</option> <!-- Opcja w polu wyboru -->
+                        <option>Niemcy</option> <!-- Opcja w polu wyboru -->
+                        <option>Włochy</option> <!-- Opcja w polu wyboru -->
+                    </select><br>
+                        <h3 class="mb-4 tm-text-gray">Płeć</h3>
+                        <label class="mb-4 tm-text-gray"> <!-- Etykieta dla pola formularza -->
+                            <input type="radio" name="plec" value="M"> <!-- Pole input formularza -->
+                             Mężczyzna
+                        </label><br>
+                        <label class="mb-4 tm-text-gray"> <!-- Etykieta dla pola formularza -->
+                            <input type="radio" name="plec" value="K"> <!-- Pole input formularza -->
+                             Kobieta
+                        </label><br>
+                        <h4 class="mb-4 tm-text-gray">Wybierz obiekty, które mają się znaleźć na Twojej widokówce:</h4>
+                        <label class="mb-4 tm-text-gray"> <!-- Etykieta dla pola formularza -->
+                            <input type="checkbox" name="opera" value="ob " class="form-control"> <!-- Pole input formularza -->
+                            Opera Nova
+                        </label>
+                        <label class="mb-4 tm-text-gray"> <!-- Etykieta dla pola formularza -->
+                            <input type="checkbox" name="fontanna" value="ob " class="form-control"> <!-- Pole input formularza -->
+                            Fontanna Potop
+                        </label>
+                        <label class="mb-4 tm-text-gray"> <!-- Etykieta dla pola formularza -->
+                            <input type="checkbox" name="wyspa" value="ob" class="form-control"> <!-- Pole input formularza -->
+                            Wyspa Młyńska
+                        </label>
+                    <input type="submit" value="Wyślij" class="form-control" > <!-- Przycisk submit formularza -->
+                    <input type="reset" value="Anuluj"  class="form-control"> <!-- Przycisk reset formularza -->
+                </form>
+            </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+        <hr>
+
+
+        <section class="section dojazd" id="dojazd" data-section="dojazd"> <!-- Otwarcie sekcji z określoną klasą -->
+            <div class="row tm-section-mb tm-section-mt"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <h3 class="mb-4 tm-text-gray">Dojazd:</h3><br>              
+                <div id="map" style="height: 500px; width: 100%;"> <!-- Otwarcie znacznika div z określonym id -->
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+        <hr>
+
+
+        <section class="section contact"  id="contact" data-section="contact"> <!-- Otwarcie sekcji z określoną klasą -->
+            <div class="row tm-section-mt"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <div class="col-lg-6"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <h3 class="mb-4 tm-text-gray">Our Location</h3>
+                    <div id="google-map" class="text-center mb-5"> <!-- Otwarcie znacznika div z określonym id -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d306423.97113092156!2d17.70875095753231!3d53.1292715543388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47031386764ebd6f%3A0xe49ee48c4b65f30e!2sBydgoszcz!5e0!3m2!1spl!2spl!4v1717699819552!5m2!1spl!2spl" class="google-map-iframe" width="500" height="300" style="border:0" allowfullscreen></iframe> <!-- Wstawienie mapy Google za pomocą iframe -->
+                    </div> <!-- Zamknięcie znacznika div -->
+                </div> <!-- Zamknięcie znacznika div -->
+                <div class="col-lg-6 mb-5"> <!-- Otwarcie znacznika div z określoną klasą -->
+                    <h3 class="mb-4 tm-text-gray">Contact Us</h3>
+                    <form action="#contact" method="post" class="tm-contact-form"> <!-- Otwarcie formularza z akcją mailto do wysyłania danych na email -->
+                        <div class="row"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <div class="form-group col-xl-6"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name..." required> <!-- Pole input formularza -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                            <div class="form-group col-xl-6"> <!-- Otwarcie znacznika div z określoną klasą -->
+                                <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email..." required> <!-- Pole input formularza -->
+                            </div> <!-- Zamknięcie znacznika div -->
+                        </div> <!-- Zamknięcie znacznika div -->
+                        <div class="form-group"> <!-- Otwarcie znacznika div z określoną klasą -->
+                            <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Your Message..." required></textarea>
+                        </div> <!-- Zamknięcie znacznika div -->
+                        <button type="submit" class="btn  tm-btn-send">Send It</button> <!-- Przycisk w formularzu -->
+                    </form>
+                </div> <!-- Zamknięcie znacznika div -->
+            </div> <!-- Zamknięcie znacznika div -->
+        </section>
+        <hr>
+
+
+        <footer class="row mt-5 mb-5"> <!-- Otwarcie sekcji stopki strony -->
+            <div class="col-lg-12"> <!-- Otwarcie znacznika div z określoną klasą -->
+                <p class="text-center tm-text-gray tm-copyright-text mb-0">Copyright &copy;
+                    <span class="tm-current-year">2018</span> Your Company Name 
+                    Design: <a href="http://templatemo.com/tm-517-timeless" class="tm-text-white">Timeless</a>
+                </p>
+                </div> <!-- Zamknięcie znacznika div -->
+        </footer> <!-- Zamknięcie sekcji stopki strony -->
+
+        
+    </div> <!-- Zamknięcie znacznika div -->
+    <script src="js/jquery.min.js"></script> <!-- Wstawienie skryptu JavaScript do strony -->
+    <script src="js/templatemo-script.js"></script> <!-- Wstawienie skryptu JavaScript do strony -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJGfXceWPHINxUPoXpVIedf9ezPlCIVaU&callback=initMap" async defer></script> <!-- Wstawienie skryptu JavaScript do strony -->
+    
+</body> <!-- Zamknięcie sekcji ciała dokumentu -->
+</html> <!-- Zamknięcie znacznika HTML -->

@@ -1,0 +1,881 @@
+
+body {
+background-color: rgba(22,34,57,0.99); /* Ustawia kolor tła */
+color: #FFFFFF; /* Ustawia kolor tekstu */
+font-family: 'Montserrat', sans-serif; /* Ustawia rodzinę czcionek */
+font-weight: 300; /* Ustawia grubość czcionki */
+overflow-x: hidden; /* Ustawia sposób zarządzania przepełnieniem elementu */
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: 300; /* Ustawia grubość czcionki */
+}
+
+h3 {
+font-size: 1.3rem; /* Ustawia rozmiar czcionki */
+}
+
+a {
+color: #3CF; /* Ustawia kolor tekstu */
+    text-decoration: none;
+}
+
+a:hover {
+color: #FC3; /* Ustawia kolor tekstu */
+    text-decoration: none;
+}
+
+ul {
+padding: 0px; /* Ustawia wewnętrzne odstępy (padding) */
+margin: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+list-style: none; /* Ustawia styl listy */
+}
+
+p {
+font-size: 13px; /* Ustawia rozmiar czcionki */
+line-height: 22px; /* Ustawia wysokość elementu */
+}
+
+hr {
+border-color: #666666; /* Ustawia kolor tekstu */
+max-width: 70%; /* Ustawia szerokość elementu */
+}
+
+.section-heading {
+text-align: center; /* Ustawia wyrównanie tekstu */
+margin-bottom: 70px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.section-heading h2:before {
+width: 1px; /* Ustawia szerokość elementu */
+height: 100px; /* Ustawia wysokość elementu */
+background-color: rgba(250,250,250,0.1); /* Ustawia kolor tła */
+position: absolute; /* Ustawia pozycję elementu */
+top: -102px; /* Ustawia odległość elementu od góry */
+content: ''; /* Ustawia zawartość pseudo-elementu */
+left: 50%; /* Ustawia odległość elementu od lewej */
+transform: translate(-50%); /* Ustawia transformację elementu */
+}
+
+.section-heading h2 {
+margin-top: 100px; /* Ustawia zewnętrzne odstępy (margin) */
+position: relative; /* Ustawia pozycję elementu */
+font-size: 18px; /* Ustawia rozmiar czcionki */
+font-weight: 500; /* Ustawia grubość czcionki */
+color: #fff; /* Ustawia kolor tekstu */
+letter-spacing: 0.5px; /* Ustawia odstępy między literami */
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+padding: 15px 20px; /* Ustawia wewnętrzne odstępy (padding) */
+border: 2px solid rgba(250,250,250,0.1); /* Ustawia obramowanie elementu */
+}
+
+a.menu-link {
+display: none; /* Ustawia sposób wyświetlania elementu */
+}
+
+.main-button a {
+background-color: #f5a425; /* Ustawia kolor tła */
+color: #fff; /* Ustawia kolor tekstu */
+font-size: 13px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+letter-spacing: 0.5px; /* Ustawia odstępy między literami */
+font-weight: 700; /* Ustawia grubość czcionki */
+padding: 12px 20px; /* Ustawia wewnętrzne odstępy (padding) */
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+outline: none; /* Ustawia kontur elementu */
+}
+
+a.menu-link {
+display: none; /* Ustawia sposób wyświetlania elementu */
+}
+
+@media screen and (max-width: 950px) {
+a.menu-link {
+float: right; /* Ustawia odległość elementu od prawej */
+display: block; /* Ustawia sposób wyświetlania elementu */
+font-size: 36px; /* Ustawia rozmiar czcionki */
+color: #fff; /* Ustawia kolor tekstu */
+padding-right: 30px; /* Ustawia wewnętrzne odstępy (padding) */
+padding-top: 15px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+
+nav[role="navigation"] {
+    clear: both;
+-webkit-transition: all 0.3s ease-out; /* Ustawia animację przejścia */
+-moz-transition: all 0.3s ease-out; /* Ustawia animację przejścia */
+-ms-transition: all 0.3s ease-out; /* Ustawia animację przejścia */
+-o-transition: all 0.3s ease-out; /* Ustawia animację przejścia */
+transition: /* Ustawia animację przejścia */
+    all 0.3s ease-out;
+}
+.js nav[role="navigation"] {
+overflow: hidden; /* Ustawia sposób zarządzania przepełnieniem elementu */
+max-height: 0; /* Ustawia wysokość elementu */
+}
+  
+nav[role="navigation"].active {
+max-height: 20em; /* Ustawia wysokość elementu */
+height: 20em; /* Ustawia wysokość elementu */
+overflow-y: scroll; /* Ustawia sposób zarządzania przepełnieniem elementu */
+}
+
+nav[role="navigation"] ul {
+top: 0; /* Ustawia odległość elementu od góry */
+width: 100%; /* Ustawia szerokość elementu */
+position: relative; /* Ustawia pozycję elementu */
+margin: 0; /* Ustawia zewnętrzne odstępy (margin) */
+padding: 0; /* Ustawia wewnętrzne odstępy (padding) */
+border-top: 1px solid rgba(250,250,250,0.25); /* Ustawia odległość elementu od góry */
+background-color: rgba(22,34,57,0.99); /* Ustawia kolor tła */
+}
+
+nav[role="navigation"] li a {
+display: block; /* Ustawia sposób wyświetlania elementu */
+padding: 15px 0px; /* Ustawia wewnętrzne odstępy (padding) */
+border-bottom: 1px solid rgba(250,250,250,0.25); /* Ustawia odległość elementu od dołu */
+text-align: center; /* Ustawia wyrównanie tekstu */
+color: #fff; /* Ustawia kolor tekstu */
+font-size: 13px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+font-weight: 700; /* Ustawia grubość czcionki */
+line-height: 1.5; /* Ustawia wysokość elementu */
+}
+
+nav[role="navigation"] li:hover a,
+nav[role="navigation"] li.active a {
+color: #f5a425; /* Ustawia kolor tekstu */
+}
+
+@media screen and (min-width: 951px) {
+.js nav[role="navigation"] {
+max-height: none; /* Ustawia wysokość elementu */
+}
+
+nav[role="navigation"] li {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+margin: 0 0.25em; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+nav[role="navigation"] li a {
+border: 0; /* Ustawia obramowanie elementu */
+}
+}
+}
+
+@media screen and (max-width: 1050px) {
+.main-header .logo {
+padding-left: 30px!important; /* Ustawia wewnętrzne odstępy (padding) */
+}
+  
+.main-menu {
+padding-right: 30px!important; /* Ustawia wewnętrzne odstępy (padding) */
+}
+
+.main-menu li {
+margin-left: 5px!important; /* Ustawia zewnętrzne odstępy (margin) */
+}
+}
+  
+.main-header {
+background-color: rgba(22,34,57,0.95); /* Ustawia kolor tła */
+height: 80px; /* Ustawia wysokość elementu */
+position: fixed; /* Ustawia pozycję elementu */
+z-index: 12; /* Ustawia z-index (kolejność nakładania się) elementu */
+width: 100%; /* Ustawia szerokość elementu */
+top: 0; /* Ustawia odległość elementu od góry */
+}
+  
+.main-header .logo {
+float: left; /* Ustawia odległość elementu od lewej */
+line-height: 80px; /* Ustawia wysokość elementu */
+padding-left: 60px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+  
+.main-header .logo a {
+font-size: 36px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+font-weight: 800; /* Ustawia grubość czcionki */
+color: #fff; /* Ustawia kolor tekstu */
+}
+
+.main-header .logo a em {
+    font-style: normal;
+color: #f5a425; /* Ustawia kolor tekstu */
+}
+  
+.main-menu {
+float: right; /* Ustawia odległość elementu od prawej */
+padding-right: 60px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+  
+.main-menu li {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+line-height: 79px; /* Ustawia wysokość elementu */
+margin-left: 15px; /* Ustawia zewnętrzne odstępy (margin) */
+position: relative; /* Ustawia pozycję elementu */
+}
+  
+.main-menu li:first-child {
+margin-left: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+  
+.main-menu li a {
+padding: 10px 15px; /* Ustawia wewnętrzne odstępy (padding) */
+font-size: 13px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+letter-spacing: 0.5px; /* Ustawia odstępy między literami */
+font-weight: 700; /* Ustawia grubość czcionki */
+color: #fff; /* Ustawia kolor tekstu */
+border: 2px solid transparent; /* Ustawia obramowanie elementu */
+transition: all 0.5s; /* Ustawia animację przejścia */
+}
+  
+.main-menu li.has-submenu a:after {
+content: '\f107'; /* Ustawia zawartość pseudo-elementu */
+font-family: "FontAwesome"; /* Ustawia rodzinę czcionek */
+margin-left: 5px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+  
+.main-menu li.has-submenu ul li a:after {
+display: none; /* Ustawia sposób wyświetlania elementu */
+}
+  
+.main-menu li .sub-menu {
+position: absolute; /* Ustawia pozycję elementu */
+width: 160px; /* Ustawia szerokość elementu */
+background-color: #18233a; /* Ustawia kolor tła */
+opacity: 0; /* Ustawia przezroczystość elementu */
+visibility: hidden; /* Ustawia widoczność elementu */
+transition: all 0.5s; /* Ustawia animację przejścia */
+}
+  
+.main-menu li:hover .sub-menu {
+opacity: 1; /* Ustawia przezroczystość elementu */
+visibility: visible; /* Ustawia widoczność elementu */
+}
+  
+.main-menu li .sub-menu li {
+display: block; /* Ustawia sposób wyświetlania elementu */
+line-height: 20px; /* Ustawia wysokość elementu */
+margin-left: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+margin-bottom: 15px; /* Ustawia zewnętrzne odstępy (margin) */
+padding-bottom: 15px; /* Ustawia wewnętrzne odstępy (padding) */
+border-bottom: 1px solid #121b2f; /* Ustawia odległość elementu od dołu */
+}
+  
+.main-menu li .sub-menu li:first-child {
+padding-top: 15px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+  
+.main-menu li .sub-menu li:last-child {
+margin-bottom: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+border-bottom: none; /* Ustawia odległość elementu od dołu */
+}
+  
+.main-menu li .sub-menu li a {
+font-size: 12px; /* Ustawia rozmiar czcionki */
+font-weight: 500; /* Ustawia grubość czcionki */
+padding: 0px 15px; /* Ustawia wewnętrzne odstępy (padding) */
+letter-spacing: 0.5px; /* Ustawia odstępy między literami */
+border: none; /* Ustawia obramowanie elementu */
+transition: all 0.5s; /* Ustawia animację przejścia */
+}
+  
+.main-menu li .sub-menu li a:hover {
+color: #f5a425; /* Ustawia kolor tekstu */
+border: none; /* Ustawia obramowanie elementu */
+}
+  
+.main-nav li:hover a,
+.main-nav li.active a {
+border: 2px solid #f5a425; /* Ustawia obramowanie elementu */
+}
+  
+@media (max-width: 950px) {
+.main-nav li:hover a,
+.main-nav li.active a {
+border: 2px solid transparent; /* Ustawia obramowanie elementu */
+border-bottom: 1px solid rgba(250,250,250,0.25); /* Ustawia odległość elementu od dołu */
+}
+}
+
+.tm-site-title {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+    vertical-align: middle;
+margin-bottom: 0; /* Ustawia zewnętrzne odstępy (margin) */
+font-family: cursive; /* Ustawia rodzinę czcionek */
+font-size: 70px; /* Ustawia rozmiar czcionki */
+}
+
+.tm-site-header {
+padding-top: 45px; /* Ustawia wewnętrzne odstępy (padding) */
+padding-bottom: 45px; /* Ustawia wewnętrzne odstępy (padding) */
+margin-bottom: 0; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+#tm-video-loader {
+border: 5px solid #f3f3f3; /* Ustawia obramowanie elementu */
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+border-top: 5px solid #555; /* Ustawia odległość elementu od góry */
+border-radius: 50%; /* Ustawia obramowanie elementu */
+width: 50px; /* Ustawia szerokość elementu */
+height: 50px; /* Ustawia wysokość elementu */
+position: absolute; /* Ustawia pozycję elementu */
+top: 0; left: 0; bottom: 0; right: 0; /* Ustawia odległość elementu od góry */
+margin: auto; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+.tm-video-container {
+position: relative; /* Ustawia pozycję elementu */
+max-width: 1000vh; /* Ustawia szerokość elementu */
+max-height: 900px; /* Ustawia wysokość elementu */
+overflow-y: hidden; /* Ustawia sposób zarządzania przepełnieniem elementu */
+display: flex; /* Ustawia sposób wyświetlania elementu */
+justify-content: center; /* Ustawia zawartość pseudo-elementu */
+    align-items: center;
+}
+
+.tm-video-text {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+}
+
+.tm-welcome-video {
+width: 100%; /* Ustawia szerokość elementu */
+height: 1200px; /* Ustawia wysokość elementu */
+    object-fit: cover;
+z-index: -100; /* Ustawia z-index (kolejność nakładania się) elementu */
+background-color: black; /* Ustawia kolor tła */
+    background-size: cover;
+transition: 1s opacity; /* Ustawia animację przejścia */
+}
+
+.tm-video-text-overlay {
+position: absolute; /* Ustawia pozycję elementu */
+background-color: rgba(124, 154, 211, 0.65); /* Ustawia kolor tła */
+top: 0; /* Ustawia odległość elementu od góry */
+left: 0; /* Ustawia odległość elementu od lewej */
+bottom: 0px; /* Ustawia odległość elementu od dołu */
+width: 100%; /* Ustawia szerokość elementu */
+    
+
+}
+
+.main-button a {
+background-color: #f5a425; /* Ustawia kolor tła */
+color: #fff; /* Ustawia kolor tekstu */
+font-size: 13px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+letter-spacing: 0.5px; /* Ustawia odstępy między literami */
+font-weight: 700; /* Ustawia grubość czcionki */
+padding: 12px 20px; /* Ustawia wewnętrzne odstępy (padding) */
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+outline: none; /* Ustawia kontur elementu */
+}
+
+.tm-overlay-caption-text{
+text-align: center; /* Ustawia wyrównanie tekstu */
+position: absolute; /* Ustawia pozycję elementu */
+width: 80%; /* Ustawia szerokość elementu */
+left: 50%; /* Ustawia odległość elementu od lewej */
+top: 30%; /* Ustawia odległość elementu od góry */
+color: #FC3; /* Ustawia kolor tekstu */
+transform: translate(-50%,-50%); /* Ustawia transformację elementu */
+}
+
+.tm-video-text-overlay h1 {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+vertical-align: top; /* Ustawia odległość elementu od góry */
+margin-bottom: 0; /* Ustawia zewnętrzne odstępy (margin) */
+font-size: 90px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+font-weight: 800; /* Ustawia grubość czcionki */
+}
+
+.tm-video-text-overlay h6 {
+margin-top: 30px; /* Ustawia zewnętrzne odstępy (margin) */
+margin-bottom: 30px; /* Ustawia zewnętrzne odstępy (margin) */
+font-size: 34px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+font-weight: 800; /* Ustawia grubość czcionki */
+color: #fff; /* Ustawia kolor tekstu */
+letter-spacing: 1px; /* Ustawia odstępy między literami */
+}
+
+.tm-video-text-overlay h6 em {
+    font-style: normal;
+color: #f5a425; /* Ustawia kolor tekstu */
+font-weight: 900; /* Ustawia grubość czcionki */
+}
+
+.tm-welcome-text {
+margin-top: 65px; /* Ustawia zewnętrzne odstępy (margin) */
+margin-bottom: 65px; /* Ustawia zewnętrzne odstępy (margin) */
+font-size: 2.2rem; /* Ustawia rozmiar czcionki */
+}
+
+.tm-video-iframe {
+height: auto; /* Ustawia wysokość elementu */
+}
+
+@media screen and (max-width: 1180px) {
+
+.main-banner .tm-overlay-caption-text h6 {
+font-weight: 500; /* Ustawia grubość czcionki */
+}
+  
+.main-banner .tm-overlay-caption-text h1 {
+font-size: 58px; /* Ustawia rozmiar czcionki */
+}
+  
+}
+@media screen and (max-width: 767px) {
+  
+.main-banner .tm-overlay-caption-text h6 {
+font-weight: 500; /* Ustawia grubość czcionki */
+}
+ 
+.main-banner .tm-overlay-caption-text h1 {
+font-size: 36px; /* Ustawia rozmiar czcionki */
+}
+}
+
+section.features .col-4 {
+padding-left: 0px; /* Ustawia wewnętrzne odstępy (padding) */
+padding-right: 0px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+
+.features-post {
+position: relative; /* Ustawia pozycję elementu */
+margin-bottom: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.features-thumb {
+overflow: hidden; /* Ustawia sposób zarządzania przepełnieniem elementu */
+position: relative; /* Ustawia pozycję elementu */
+}
+
+.features-thumb img {
+width: 100%; /* Ustawia szerokość elementu */
+}
+
+.features-content {
+position: absolute; /* Ustawia pozycję elementu */
+bottom: 0; /* Ustawia odległość elementu od dołu */
+left: 10%; /* Ustawia odległość elementu od lewej */
+width: 80%; /* Ustawia szerokość elementu */
+background-color: #0c1228; /* Ustawia kolor tła */
+color: #fff; /* Ustawia kolor tekstu */
+padding: 40px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+
+.features-content:hover {
+background-color: #f5a425; /* Ustawia kolor tła */
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+.features-content h4 {
+font-size: 16px; /* Ustawia rozmiar czcionki */
+text-transform: uppercase; /* Ustawia transformację elementu */
+font-weight: 700; /* Ustawia grubość czcionki */
+color: #fff; /* Ustawia kolor tekstu */
+letter-spacing: 1px; /* Ustawia odstępy między literami */
+margin-bottom: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.features-content h4 i {
+margin-right: 15px; /* Ustawia zewnętrzne odstępy (margin) */
+font-size: 24px; /* Ustawia rozmiar czcionki */
+}
+
+.features-content p {
+margin-bottom: 0px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.features-content a {
+margin-top: 15px; /* Ustawia zewnętrzne odstępy (margin) */
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+text-transform: uppercase; /* Ustawia transformację elementu */
+color: #fff; /* Ustawia kolor tekstu */
+letter-spacing: 0.5px; /* Ustawia odstępy między literami */
+font-weight: 700; /* Ustawia grubość czcionki */
+font-size: 14px; /* Ustawia rozmiar czcionki */
+border-bottom: 2px solid #fff; /* Ustawia odległość elementu od dołu */
+}
+
+.features-content p.hidden-sm {
+display: none; /* Ustawia sposób wyświetlania elementu */
+}
+
+.second-features,
+.third-features {
+border-left: 1px solid rgba(250,250,250,0.1); /* Ustawia odległość elementu od lewej */
+    
+}
+
+.content-hide {
+margin-top: 15px; /* Ustawia zewnętrzne odstępy (margin) */
+display: none; /* Ustawia sposób wyświetlania elementu */
+}
+
+.content-hide p {
+color: #fff; /* Ustawia kolor tekstu */
+}
+
+@media screen and (max-width: 767px) {
+
+.features-content {
+padding: 15px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+.features-content h4 i {
+display: block; /* Ustawia sposób wyświetlania elementu */
+margin-bottom: 10px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+.features-content h4 {
+font-size: 14px; /* Ustawia rozmiar czcionki */
+}
+.features-content p {
+display: none; /* Ustawia sposób wyświetlania elementu */
+}
+.features-content p.hidden-sm {
+display: block; /* Ustawia sposób wyświetlania elementu */
+}
+.features-content a {
+letter-spacing: 0px; /* Ustawia odstępy między literami */
+font-size: 13px; /* Ustawia rozmiar czcionki */
+font-weight: 600; /* Ustawia grubość czcionki */
+}
+}
+
+.tm-font-400 {
+font-weight: 400; /* Ustawia grubość czcionki */
+}
+
+.tm-text-light-gray {
+color: #CDCDCD; /* Ustawia kolor tekstu */
+}
+
+.tm-text-gray {
+color: #CCCCCC; /* Ustawia kolor tekstu */
+}
+
+.tm-text-white {
+color: #FFFFFF; /* Ustawia kolor tekstu */
+}
+
+a.tm-text-white:hover,
+a.tm-text-white:focus {
+color: #FFFFFF; /* Ustawia kolor tekstu */
+}
+
+.tm-text-green {
+color: #99CC66; /* Ustawia kolor tekstu */
+}
+
+.tm-text-cyan {
+color: #33CCCC; /* Ustawia kolor tekstu */
+}
+
+.tm-text-yellow {
+color: #FFFF66; /* Ustawia kolor tekstu */
+}
+
+.tm-text-orange {
+color: #CC9966; /* Ustawia kolor tekstu */
+}
+
+.tm-bg-dark {
+background-color: #262626; /* Ustawia kolor tła */
+}
+
+.tm-bg-dark-light {
+background-color: #404040; /* Ustawia kolor tła */
+}
+
+.tm-timeline-item {
+margin-left: 70px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.tm-timeline-item-inner {
+display: flex; /* Ustawia sposób wyświetlania elementu */
+    align-items: center;
+}
+
+.tm-img-timeline {
+width: 160px; /* Ustawia szerokość elementu */
+height: 160px; /* Ustawia wysokość elementu */
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+    vertical-align: middle;
+}
+
+.tm-timeline-connector {
+width: 55px; /* Ustawia szerokość elementu */
+height: 3px; /* Ustawia wysokość elementu */
+background-color: #404040; /* Ustawia kolor tła */
+}
+
+.tm-timeline-connector-vertical {
+height: 60px; /* Ustawia wysokość elementu */
+width: 3px; /* Ustawia szerokość elementu */
+background-color: #404040; /* Ustawia kolor tła */
+margin-left: 260px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.tm-timeline-description {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+    vertical-align: middle;
+border-radius: 20px; /* Ustawia obramowanie elementu */
+padding: 35px 40px; /* Ustawia wewnętrzne odstępy (padding) */
+max-width: 712px; /* Ustawia szerokość elementu */
+}
+
+.tm-section-mb {
+margin-bottom: 85px; /* Ustawia zewnętrzne odstępy (margin) */
+width: 100%; /* Ustawia szerokość elementu */
+margin-left: 10px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.tm-section-mt {
+margin-left: 10px; /* Ustawia zewnętrzne odstępy (margin) */
+margin-top: 85px; /* Ustawia zewnętrzne odstępy (margin) */
+width: 100%; /* Ustawia szerokość elementu */
+}
+
+.tm-contact-form {
+max-width: 500px; /* Ustawia szerokość elementu */
+}
+
+.form-control {
+border-radius: 0; /* Ustawia obramowanie elementu */
+border-color: #666666; /* Ustawia kolor tekstu */
+color: #CCC; /* Ustawia kolor tekstu */
+    background: transparent;
+padding: 8px 13px; /* Ustawia wewnętrzne odstępy (padding) */
+}
+
+.form-control option {
+color: #000; /* Ustawia kolor tekstu */
+}
+
+.poster {
+display: flex; /* Ustawia sposób wyświetlania elementu */
+justify-content: center; /* Ustawia zawartość pseudo-elementu */
+    align-items: center;
+width: 100%; /* Ustawia szerokość elementu */
+padding: 20px; /* Ustawia wewnętrzne odstępy (padding) */
+box-sizing: border-box; /* Ustawia obramowanie elementu */
+}
+
+.dojazd {
+display: inline-block; /* Ustawia sposób wyświetlania elementu */
+justify-content: center; /* Ustawia zawartość pseudo-elementu */
+    align-items: center;
+width: 100%; /* Ustawia szerokość elementu */
+padding: 20px; /* Ustawia wewnętrzne odstępy (padding) */
+box-sizing: border-box; /* Ustawia obramowanie elementu */
+}
+
+label {
+display: inline-flex; /* Ustawia elementy wewnątrz label jako flexbox */ /* Ustawia sposób wyświetlania elementu */
+    align-items: center; /* Wyrównuje pionowo */
+margin-bottom: 10px; /* Dodaje odstęp między etykietami */ /* Ustawia zewnętrzne odstępy (margin) */
+    cursor: pointer; /* Ustawia kursor na wskazujący, gdy jest nad etykietą */
+}
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #CCCCCC; /* Ustawia kolor tekstu */
+opacity: 1; /* Ustawia przezroczystość elementu */
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+color: #DDDDDD; /* Ustawia kolor tekstu */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+color: #DDDDDD; /* Ustawia kolor tekstu */
+}
+
+iframe {
+max-width: 100%; /* Ustawia szerokość elementu */
+}
+
+#google-map {
+max-width: 500px; /* Ustawia szerokość elementu */
+width: 100%; /* Ustawia szerokość elementu */
+height: 300px; /* Ustawia wysokość elementu */
+}
+
+.tm-btn-send {
+border-radius: 0; /* Ustawia obramowanie elementu */
+font-size: 1.1rem; /* Ustawia rozmiar czcionki */
+padding: 12px 50px; /* Ustawia wewnętrzne odstępy (padding) */
+    background: transparent;
+border: 1px solid #CCCCCC; /* Ustawia obramowanie elementu */
+color: #CCCCCC; /* Ustawia kolor tekstu */
+}
+
+.tm-btn-send:hover,
+.tm-btn-send:focus {
+    background: #CCCCCC;
+color: #333333; /* Ustawia kolor tekstu */
+}
+
+.form-control:focus {
+background-color: transparent; /* Ustawia kolor tła */
+border-color: #CCCCCC; /* Ustawia kolor tekstu */
+color: #FFF; /* Ustawia kolor tekstu */
+    box-shadow: 0 0 0 0.2rem #cccccc14;
+}
+
+input,
+textarea,
+[contenteditable] {
+caret-color: #FFFFFF; /* Ustawia kolor tekstu */
+}
+
+p {
+line-height: 1.9; /* Ustawia wysokość elementu */
+}
+
+@media (min-width: 1200px) {
+.container {
+max-width: 100%; /* Ustawia szerokość elementu */
+}
+.tm-container-2 {
+max-width: 1170px; /* Ustawia szerokość elementu */
+}
+.tm-video-container {
+max-height: 815px; /* Ustawia wysokość elementu */
+}
+}
+
+@media (max-width: 1199px) {
+.tm-video-container {
+max-width: 932px; /* Ustawia szerokość elementu */
+max-height: 715px; /* Ustawia wysokość elementu */
+}
+}
+
+@media (max-width: 991px) {
+    #google-map,
+.tm-contact-form {
+max-width: 100%; /* Ustawia szerokość elementu */
+}
+.google-map-iframe {
+width: 100%; /* Ustawia szerokość elementu */
+}
+.tm-video-container {
+max-width: 690px; /* Ustawia szerokość elementu */
+max-height: 575px; /* Ustawia wysokość elementu */
+margin-top: 15%; /* Ustawia zewnętrzne odstępy (margin) */
+}
+
+.tm-video-text-overlay h1 {
+font-size: 2.8rem; /* Ustawia rozmiar czcionki */
+}
+.tm-timeline-item {
+margin-left: 25px; /* Ustawia zewnętrzne odstępy (margin) */
+}
+}
+
+@media (max-width: 767px) {
+.tm-timeline-item {
+margin-left: 0; /* Ustawia zewnętrzne odstępy (margin) */
+}
+.tm-video-container {
+max-width: 590px; /* Ustawia szerokość elementu */
+max-height: 475px; /* Ustawia wysokość elementu */
+margin-top: 20%; /* Ustawia zewnętrzne odstępy (margin) */
+}
+    .tm-video-container,
+.tm-welcome-video {
+min-height: 220px; /* Ustawia wysokość elementu */
+}
+
+}
+
+@media (max-width: 584px) {
+.tm-timeline-item-inner {
+        flex-direction: column;
+}
+.tm-timeline-connector {
+width: 3px; /* Ustawia szerokość elementu */
+height: 55px; /* Ustawia wysokość elementu */
+}
+.tm-timeline-connector-vertical {
+margin-left: auto; /* Ustawia zewnętrzne odstępy (margin) */
+margin-right: auto; /* Ustawia zewnętrzne odstępy (margin) */
+}
+}
+
+@media (max-width: 575px) {
+.container {
+max-width: 540px; /* Ustawia szerokość elementu */
+}
+.tm-video-text-overlay h1 {
+font-size: 1.8rem; /* Ustawia rozmiar czcionki */
+}
+}
+
+
+@media (max-width: 480px) {
+.tm-video-container {
+overflow-x: hidden; /* Ustawia sposób zarządzania przepełnieniem elementu */
+}
+.tm-welcome-video {
+min-width: auto; /* Ustawia szerokość elementu */
+max-width: 125%; /* Ustawia szerokość elementu */
+}
+}
+@media screen and (max-width: 992px) {
+.features { background-color: #0c1228; }
+.features-content { position: relative; }
+.features-post { border-left: 0 }
+}
+  
+@media screen and (max-width: 950px) {
+.main-menu { padding-right: 0!important; }
+.main-header .logo {
+line-height: 73px; /* Ustawia wysokość elementu */
+}
+.main-menu li {
+display: block; /* Ustawia sposób wyświetlania elementu */
+line-height: 1; /* Ustawia wysokość elementu */
+margin-left: 0 !important; /* Ustawia zewnętrzne odstępy (margin) */
+}
+  
+.main-menu li .sub-menu {
+opacity: 1; /* Ustawia przezroczystość elementu */
+visibility: visible; /* Ustawia widoczność elementu */
+position: static; /* Ustawia pozycję elementu */
+margin-left: auto; /* Ustawia zewnętrzne odstępy (margin) */
+margin-right: auto; /* Ustawia zewnętrzne odstępy (margin) */
+width: 100%; /* Ustawia szerokość elementu */
+}
+.main-menu li .sub-menu li:last-child {
+border-bottom: 1px solid rgba(250,250,250,0.25); /* Ustawia odległość elementu od dołu */
+}
+}
+  
+@media screen and (max-width: 950px) and (max-height: 400px) {
+nav[role="navigation"].active {
+max-height: calc(80px + 100vh); /* Ustawia wysokość elementu */
+overflow-y: auto; /* Ustawia sposób zarządzania przepełnieniem elementu */
+}
+}
+  
+@media screen and (max-width: 767px) {
+footer p {
+font-size: 12px; /* Ustawia rozmiar czcionki */
+font-weight: 600; /* Ustawia grubość czcionki */
+letter-spacing: 0.25px; /* Ustawia odstępy między literami */
+}
+}
